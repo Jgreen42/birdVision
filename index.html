@@ -7,5 +7,6 @@
     <h1>Bird Vision GUI</h1>
     <video id="webcam-feed" autoplay src="{{ url_for('video_feed') }}"></video>
     <script src="/static/script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
