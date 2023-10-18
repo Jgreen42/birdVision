@@ -1,14 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
+  <head>
     <title>Bird Vision Web App</title>
-</head>
-<script src="{{ url_for('static', filename='script.js') }}"></script>
-<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-
-<body>
+  </head>
+  <body>
     <h1>Bird Vision GUI</h1>
-    <img id="video-stream" src="{{ url_for('video_feed') }}" width="640" height="480" style="border: 1px solid #000;">
-    <script src="script.js"></script>
-</body>
+    <video id="webcam-feed" autoplay src="{{ url_for('video_feed') }}"></video>
+    <script src="/static/script.js"></script>
+  </body>
 </html>
