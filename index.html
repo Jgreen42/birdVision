@@ -1,12 +1,15 @@
-<!doctype html>
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bird Vision Web App</title>
-  </head>
-  <body>
+</head>
+<body>
     <h1>Bird Vision GUI</h1>
-    <video id="webcam-feed" autoplay src="{{ url_for('video_feed') }}"></video>
+    <video id="webcam-feed" autoplay playsinline></video>
+    <canvas id="bird-vision-canvas" width="640" height="480"></canvas>
+    <canvas id="motion-detection-canvas" width="640" height="480"></canvas>
     <script src="/static/script.js"></script>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-  </body>
+</body>
 </html>
