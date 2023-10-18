@@ -3,7 +3,7 @@ import numpy as np
 from flask import Flask, render_template, Response
 from your_module import get_frames  # Import your frame processing function
 
-app = Flask(__name__)
+app = Flask(__name)
 
 # OpenCV camera capture
 cap = cv2.VideoCapture(0)

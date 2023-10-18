@@ -9,3 +9,5 @@ navigator.mediaDevices
   .catch((error) => {
     console.error('Error accessing webcam:', error);
   });
+
+  app.static_folder = 'static'
